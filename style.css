@@ -1,118 +1,183 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body{
-    background-color: #bd1ab5;
-    font-size: 1.5em;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 header{
+    background-color: #1A7FBD;
+}
+
+picture{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+picture > a > img{
+    width: 40vw;
+}
+
+i#burguer{
+    background-color: #1A7FBD;
     width: 100vw;
-    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
     border-style: solid;
     border-width: 3px;
     border-image: linear-gradient(to left, #1A7FBD, #FFF , #1A7FBD) 0 0 100% 0/2px 0 2px 0 ;
-    padding: 0px 0px 10px 0px;
 }
-    menu{
-        text-align: center;
-        width: 100vw;
-        padding: 25px;
-    }
-    a > img{
-        margin: 0px 30px;
-        width: 440px;
-        top: 30px;
-        position: relative;
-    }
-    menu > a{
-        text-decoration: none;
-        margin: 75px;
-        color: white;
-    }
-    #processo{
-        background-color: black;
-        margin: 20px 30px;
-        color:white;
-        padding: 25px 20px;
-        border-radius: 15px;
-    }
 
-    section > div{display: inline-block;}
+i#burguer:hover{
+    background-color:white;
+    color: #1A7FBD;}
 
-    div#background1 {
-        background: url(Imagens/bannertopo.png) no-repeat center center;
-        width: 68vw;
-        height: 159vh;
-        border: 3px solid gray;
-        background-size: cover;
-        position: relative;
-    }
+menu{
+    display: none;
+    padding-inline-start: 0px;
+}
+menu > ul{
+    list-style-type: none;
+}
 
-    #formulario {
-        position: absolute;
-        left: -1%;
-        top: -1%;
-        width: 1029px;
-        background-color: white;
-        border: 35px solid white;
-        border-radius: 15px;
-    }
+li > a{
+    font-size: 17px;
+    text-shadow: .7px .7px 0.5px black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #1A7FBD;
+    color: white;
+    border-top: 1px solid white;
+}
 
-    article {
-        position: absolute;
-        left: 56%;
-        top: 27%;
-        width: 1077px;
-        height: 1000px;
-        background-color: white;
-        border: 27px solid #1A7FBD;
-        border-radius: 15px;
-    }
+li > a:hover{
+    background-color: #29adff;
+}
+
+main{
+    background-color: #1A7FBD;
+}
+
+div#background1{
+    background-image: url(Imagens/bannertopo.png);
+    width: 100vw;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: -90px;
+    background-position-y: -10px;
+}
+
+div#formulario {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(12%, -85%);
+    width: 210px;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+}
 
 #formulario > h1{
+    font-size: 1em;
     color: lightgray;
-    padding-top: 33px;
-    padding-left: 80px;
+    padding-top: 18px;
+    padding-left: 14px;
 }
 
 #formulario > h2{
     color: #1A7FBD;
     font-size: smaller;
-    padding-bottom: 24px;
-    padding-left: 83px;
+    padding-bottom: 12px;
+    padding-left: 14px;
 }
 
 .login{
     border: 1px solid black;
-    padding: 14px;
-    border-radius: 10px;
-    margin: 22px 0px 0px 40px;
+    border-radius: 6px;
+    margin: 7px 5px;
 }
 
 .login > label > img{
-    width: 35px;
+    width: 15px;
 }
 
 .login > label {
-    top: 6px;
+    top: 2px;
     position: relative;
-    padding-left: 8px;
+    padding-left: 4px;
+}
+
+.login > input{
+    height: 20px;
 }
 
 .login > input, select {
-    padding: 12px;
+    padding: 1px;
     font-size: 1em;
-    width: calc(100% - 87px);
+    width: calc(100% - 34px);
     border: none;
 }
 
 .program{
+    padding: 10px 0px;
+    margin-top: 13px;
+    text-align: justify;
+    font-size: 0.7em;
     background-color: #1A7FBD;
+    color: white;
+}
 
+.program > legend{
+    padding-left: 13px;
+    padding-bottom: 5px;
+}
+.program > input{
+    margin: 0px 5px;
+}
+
+.program > div{
+    padding-top: 3px;
+}
+
+div.dev > legend{
+    font-size: .7em;
+    color: #1A7FBD;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.dev > div{
+    font-size: .8em;
+}
+
+.dev > div > label{
+    padding-right: 20px;
+}
+
+#escolha{
+    margin: 10px;
+    border-bottom: .7px solid lightgray;
+
+}
+
+div.enviar{
+    text-align: center;
+    padding: 7px;
+    padding-top: 0px;
+}
+
+div.enviar > p{
+    color: #1A7FBD;
+    font-size: .5em;
+    padding: 5px 0px;
 }

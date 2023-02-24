@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Projeto Netuno</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&family=Sofia+Sans+Extra+Condensed:wght@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap');
       </style>
 </head>
 <body>
     <header>
-        <menu>
-            <picture><a href=""><img src="Imagens/assets/logo.png" alt=""></a></picture>
-            <a href="">O Projeto</a>
-            <a href="">O Problema</a>
-            <a href="">Sua Jornada</a>
-            <a href="">Objetivos</a>
-            <a id="processo" href="">Processo seletivo</a>
+        <picture><a href=""><img src="Imagens/assets/logo.png" alt=""></a></picture>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="lista">
+            <ul>
+                <li><a href="">O Projeto</a></li>
+                <li><a href="">O Problema</a></li>
+                <li><a href="">Sua Jornada</a></li>
+                <li><a href="">Objetivos</a></li>
+                <li><a id="processo" href="">Processo seletivo</a></li>
+            </ul>
         </menu>
     </header>
     <main>
@@ -76,39 +80,47 @@
                         </div>
                         <div class="program">
                                 <legend>Conhecimento de Programação*</legend>
-                                <input type="checkbox" name="html" id="ihtml">
-                                <label for="ihtml">HTML</label>
-                                <input type="checkbox" name="css" id="icss">
-                                <label for="icss">CSS</label>
-                                <input type="checkbox" name="javas" id="ijavas">
-                                <label for="ijavas">JavaScript</label>
-                                <input type="checkbox" name="php" id="iphp">
-                                <label for="iphp">PHP</label>
-                                <input type="checkbox" name=".net" id="i.net">
-                                <label for="i.net">.NET</label>
-                                <input type="checkbox" name="vuejs" id="ivuejs">
-                                <label for="ivuejs">Vue.JS</label>
-                                <input type="checkbox" name="reactjs" id="ireactjs">
-                                <label for="ireactjs">ReactJS</label>
-                                <input type="checkbox" name="reactn" id="ireactn">
-                                <label for="ireactn">React Native</label>
-                                <input type="checkbox" name="node" id="inode">
-                                <label for="inode">Node</label>
-                                <input type="checkbox" name="python" id="ipython">
-                                <label for="ipython">Python</label>
-                                <input type="checkbox" name="flutter" id="iflutter">
-                                <label for="iflutter">Flutter</label>
-                                <input type="checkbox" name="outras" id="ioutras">
-                                <label for="ioutras">Outras</label>
+                                <div>
+                                    <input type="checkbox" name="html" id="ihtml">
+                                    <label for="ihtml">HTML</label>
+                                    <input type="checkbox" name="css" id="icss">
+                                    <label for="icss">CSS</label>
+                                    <input type="checkbox" name="javas" id="ijavas">
+                                    <label for="ijavas">JavaScript</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="php" id="iphp">
+                                    <label for="iphp">PHP</label>
+                                    <input type="checkbox" name=".net" id="i.net">
+                                    <label for="i.net">.NET</label>
+                                    <input type="checkbox" name="vuejs" id="ivuejs">
+                                    <label for="ivuejs">Vue.JS</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="reactjs" id="ireactjs">
+                                    <label for="ireactjs">ReactJS</label>
+                                    <input type="checkbox" name="reactn" id="ireactn">
+                                    <label for="ireactn">React Native</label>
+                                    <input type="checkbox" name="node" id="inode">
+                                    <label for="inode">Node</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="python" id="ipython">
+                                    <label for="ipython">Python</label>
+                                    <input type="checkbox" name="flutter" id="iflutter">
+                                    <label for="iflutter">Flutter</label>
+                                    <input type="checkbox" name="outras" id="ioutras">
+                                    <label for="ioutras">Outras</label>
+                                </div>
                         </div>
                         <div class="dev">
-                            <fieldset>
-                                <legend>Já trabalhou com desenvolvimento?</legend>
+                            <legend>Já trabalhou com desenvolvimento?</legend>
+                            <div id="escolha">
                                 <input type="radio" name="dev" id="inao">
                                 <label for="inao">Não</label>
                                 <input type="radio" name="dev" id="isim">
                                 <label for="isim">Sim</label>
-                            </fieldset>
+                            </div>
                         </div>
                         <div class="enviar">
                             <p>(*) Campos obrigatórios</p>
@@ -118,11 +130,18 @@
                 </div>
             </article>
         </section>
-
-
     </main>
     <footer>
 
     </footer>
+    <script>
+        function clickMenu() {
+            if (lista.style.display =='block'){
+            lista.style.display = 'none'
+        } else {
+            lista.style.display = 'block'
+        }
+    }
+    </script>
 </body>
 </html>
