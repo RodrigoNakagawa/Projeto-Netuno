@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    background-color: #bd1ab5;
+    font-size: 1.5em;
+}
+
+header{
+    width: 100vw;
+    height: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(to left, #1A7FBD, #FFF , #1A7FBD) 0 0 100% 0/2px 0 2px 0 ;
+    padding: 0px 0px 10px 0px;
+}
+    menu{
+        text-align: center;
+        width: 100vw;
+        padding: 25px;
+    }
+    a > img{
+        margin: 0px 30px;
+        width: 440px;
+        top: 30px;
+        position: relative;
+    }
+    menu > a{
+        text-decoration: none;
+        margin: 75px;
+        color: white;
+    }
+    #processo{
+        background-color: black;
+        margin: 20px 30px;
+        color:white;
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    section > div{display: inline-block;}
+
+    div#background1 {
+        background: url(Imagens/bannertopo.png) no-repeat center center;
+        width: 68vw;
+        height: 159vh;
+        border: 3px solid gray;
+        background-size: cover;
+        position: relative;
+    }
+
+    #formulario {
+        position: absolute;
+        left: 57%;
+        top: 27%;
+        width: 800px;
+        background-color: white;
+        padding: 50px;
+        border-radius: 15px;
+    }
+
+#formulario > h1{
+    color: lightgray;
+}
+
+#formulario > h2{
+    color: #1A7FBD;
+    font-size: smaller;
+}
+
+.login{    
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.login > label > img{
+    width: 35px;
+}
+
+.login > label {
+    top: 6px;
+    position: relative;
+    padding-left: 8px;
+}
+
+.login > input, select {
+    padding: 12px;
+    font-size: 1em;
+    width: calc(100% - 87px);
+    border: none;
+}
