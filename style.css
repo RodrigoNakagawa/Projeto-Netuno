@@ -68,42 +68,40 @@ main{
 div#background1{
     background-image: url(Imagens/bannertopo.png);
     width: 100vw;
-    height: 70vh;
-    background-size: contain;
+    height: 90vh;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: -90px;
-    background-position-y: -10px;
+    background-position-x: -128px;
+    background-position-y: -79px;
 }
 
 div#formulario {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(12%, -85%);
-    width: 210px;
+    transform: translate(0%, -62%);
+    width: 90vw;
     background-color: white;
     border-radius: 15px;
-    border: none;
+    height: 314px;
+    margin: auto;
 }
 
 #formulario > h1{
     font-size: 1em;
     color: lightgray;
-    padding-top: 18px;
-    padding-left: 14px;
+    padding: 18px 14px 10px 14px;
 }
 
 #formulario > h2{
     color: #1A7FBD;
     font-size: smaller;
-    padding-bottom: 12px;
+    padding-bottom: 4px;
     padding-left: 14px;
 }
 
 .login{
     border: 1px solid black;
     border-radius: 6px;
-    margin: 7px 5px;
+    margin: 4px 5px;
 }
 
 .login > label > img{
@@ -120,6 +118,10 @@ div#formulario {
     height: 20px;
 }
 
+.login#iest{
+    height: 20px
+}
+
 .login > input, select {
     padding: 1px;
     font-size: 1em;
@@ -128,7 +130,7 @@ div#formulario {
 }
 
 .program{
-    padding: 10px 0px;
+    padding: 1px 7px;
     margin-top: 13px;
     text-align: justify;
     font-size: 0.7em;
@@ -145,7 +147,7 @@ div#formulario {
 }
 
 .program > div{
-    padding-top: 3px;
+    padding-top: 9px;
 }
 
 div.dev > legend{
@@ -156,6 +158,13 @@ div.dev > legend{
     text-align: center;
 }
 
+.dev {
+    top: -131px;
+    position: relative;
+    width: 234px;
+    left: 48%;
+    background-color: white;
+}
 .dev > div{
     font-size: .8em;
 }
@@ -170,10 +179,15 @@ div.dev > legend{
 
 }
 
-div.enviar{
+div.enviar {
     text-align: center;
-    padding: 7px;
+    padding: 4px;
     padding-top: 0px;
+    top: -141px;
+    position: relative;
+    width: 234px;
+    left: 48%;
+    background-color: white;
 }
 
 div.enviar > p{
