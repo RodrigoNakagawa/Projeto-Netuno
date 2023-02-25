@@ -67,12 +67,9 @@ main{
 
 div#background1{
     background-image: url(Imagens/bannertopo.png);
-    width: 100vw;
-    height: 90vh;
-    background-size: cover;
+    height: 78vh;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: -128px;
-    background-position-y: -79px;
 }
 
 div#formulario {
@@ -159,9 +156,9 @@ div.dev > legend{
 }
 
 .dev {
-    top: -131px;
-    position: relative;
-    width: 234px;
+    top: 54%;
+    position: absolute;
+    width: 216px;
     left: 48%;
     background-color: white;
 }
@@ -181,11 +178,10 @@ div.dev > legend{
 
 div.enviar {
     text-align: center;
-    padding: 4px;
-    padding-top: 0px;
-    top: -141px;
-    position: relative;
-    width: 234px;
+    padding: 2px;
+    top: 71%;
+    position: absolute;
+    width: 216px;
     left: 48%;
     background-color: white;
 }
@@ -194,4 +190,30 @@ div.enviar > p{
     color: #1A7FBD;
     font-size: .5em;
     padding: 5px 0px;
+}
+
+div#parte2{
+    background-color: #1A7FBD;
+    top: -183px;
+    position: relative;
+}
+
+div#parte2 > div#background2{
+    background-image: url(Imagens/dev.png);
+    width: 90vw;
+    height: 59vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div#parte2 > div >h1 {
+    padding: 12px;
+    color: #A4DCFF;
+    font-size: 1.5em;
+}
+
+div#parte2 > div > p {
+    color: white;
+    font-size: .7em;
+    padding: 0px 12px;
 }
