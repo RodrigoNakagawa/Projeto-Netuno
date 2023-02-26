@@ -67,20 +67,19 @@ main{
 
 div#background1{
     background-image: url(Imagens/bannertopo.png);
-    width: 100vw;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-position: center top;
 }
 
 div#formulario {
     position: relative;
-    width: 91vw;
     background-color: white;
     border-radius: 15px;
-    height: 314px;
-    left: 3%;
+    height: 25em;
     transform: translate(-2px, 321px);
+    margin: 10px;
 }
 
 #formulario > h1{
@@ -127,14 +126,19 @@ div#formulario {
     border: none;
 }
 
+.group > .program, .group > .dev{
+    display: inline-block;
+}
+
 .program{    
-    padding: 1px 7px;
-    margin-top: 13px;
-    font-size: 0.7em;
+    padding: 5px 0px;
+    margin-top: 2px;
+    font-size: 0.65em;
     background-color: #1A7FBD;
     color: white;
     border: 1px solid white;
-    margin-left: -1px;
+    width: 100%;
+    text-align: center;
 }
 
 .program > legend{
@@ -147,6 +151,7 @@ div#formulario {
 
 .program > div{
     padding-top: 9px;
+    display: inline-block;
 }
 
 div.dev > legend{
@@ -154,16 +159,12 @@ div.dev > legend{
     color: #1A7FBD;
     margin-top: 8px;
     margin-bottom: 8px;
-    text-align: center;
 }
 
 .dev {
-    top: 59%;
-    position: absolute;
-    width: 52.4%;
-    left: 49.6%;
+    width: 99.4%;
     background-color: white;
-    transform: translate(-4%, -18%);
+    text-align: center;
 }
 .dev > div{
     font-size: .8em;
@@ -176,18 +177,6 @@ div.dev > legend{
 #escolha{
     margin: 10px;
     border-bottom: .7px solid lightgray;
-
-}
-
-div.enviar {
-    text-align: center;
-    top: 80%;
-    position: absolute;
-    width: 52.4%;
-    left: 49.6%;
-    background-color: white;
-    height: 70px;
-    transform: translate(-4%, -35%);
 }
 
 div.enviar > p{
@@ -198,14 +187,14 @@ div.enviar > p{
 
 div#background2{
     background-image: url(Imagens/dev.png);
-    height: 50vh;
+    height: 57vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: #1A7FBD;
 }
 
 div#parte2 {
-    margin-top: 75%;
+    margin-top: 95%;
 }
 #parte2 > div.texto >h1 {
     padding: 12px;
@@ -225,12 +214,12 @@ div#parte2 {
 
 #background3{
     background-image: url(Imagens/Container2.png);
-    width: 83vw;
-    height: 72vh;
+    height: 100vh;
+    /* width: 100vw; */
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    margin: auto;
+    /* position: relative; */
+    /* margin: auto;*/
 }
 
 #problema > h1{
@@ -277,8 +266,8 @@ div#jornada > div{
 
 div#jornada > div.vectorinv, div.vector2{
     background-image: url(Imagens/Elements/Vector2.png);
-    width: 30%;
-    height: 1vh;
+    width: 22%;
+    height: 3vh;
     background-repeat: no-repeat;
 }
 
@@ -299,28 +288,32 @@ div.boxjornada > div.grupos{
     color: #FFF;
     font-size: .8em;
     border-radius: 5px;
-    margin: 21px 4px;
-    height: 80px;
-    width: 204px;
+    margin: 11px 5px;
 }
 
 div.boxjornada > div.grupos > img{
-     background-color: #FFF;
+    background-color: #FFF;
     border-radius: 5px;
-    width: 28%;
+    width: 29%;
     border: 11px solid white;
     margin: 10px;
+    margin-top: 14px;
 }
 
 div > div.boxjornada{
     display: inline-block;
+    width: 49%;
 }
 
 div.boxjornada > div.grupos > p{
-    width: 10px;
+    width: 55%;
     font-size: .7em;
 }
 
 div.grupos > p, div.grupos > img{
     display: inline-block;
+}
+
+img.groupimg {
+    padding: 1vh 0px;
 }
