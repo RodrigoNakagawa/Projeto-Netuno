@@ -68,10 +68,9 @@ main{
 div#background1{
     background-image: url(Imagens/bannertopo.png);
     width: 100vw;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
-    height: 69vh;
 }
 
 div#formulario {
@@ -159,11 +158,12 @@ div.dev > legend{
 }
 
 .dev {
-    top: 53%;
+    top: 59%;
     position: absolute;
     width: 52.4%;
-    left: 47.6%;
+    left: 49.6%;
     background-color: white;
+    transform: translate(-4%, -18%);
 }
 .dev > div{
     font-size: .8em;
@@ -181,12 +181,13 @@ div.dev > legend{
 
 div.enviar {
     text-align: center;
-    top: 72%;
+    top: 80%;
     position: absolute;
     width: 52.4%;
-    left: 47.6%;
+    left: 49.6%;
     background-color: white;
     height: 70px;
+    transform: translate(-4%, -35%);
 }
 
 div.enviar > p{
@@ -197,15 +198,14 @@ div.enviar > p{
 
 div#background2{
     background-image: url(Imagens/dev.png);
-    width: 95vw;
-    height: 76vh;
+    height: 50vh;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-color: #1A7FBD;
 }
 
 div#parte2 {
-    margin-top: 70%;
+    margin-top: 75%;
 }
 #parte2 > div.texto >h1 {
     padding: 12px;
@@ -225,12 +225,12 @@ div#parte2 {
 
 #background3{
     background-image: url(Imagens/Container2.png);
-    width: 85vw;
-    height: 100vh;
-    background-size: contain;
+    width: 83vw;
+    height: 72vh;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    left: 13%;
+    margin: auto;
 }
 
 #problema > h1{
@@ -254,4 +254,73 @@ div#parte2 {
 #problema > p{
     font-size: .9em;
     padding: 10px;
+}
+
+article > div#box{
+    border-radius: 15px;
+    box-shadow: 0px 12px 20px 0px #bfbfbf;
+    text-align: center;
+    margin: 32px 18px;
+}
+
+div#box > h3, div#box > p {
+    padding: 10px;
+}
+
+div#jornada{
+    padding: 10px;
+}
+
+div#jornada > div{
+    display: inline-block;
+}
+
+div#jornada > div.vectorinv, div.vector2{
+    background-image: url(Imagens/Elements/Vector2.png);
+    width: 30%;
+    height: 1vh;
+    background-repeat: no-repeat;
+}
+
+div#jornada > div.jornada{
+    background: linear-gradient(to right, #1A7FBD, #29adff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7em;
+}
+
+div#jornada > div.vectorinv{
+    transform: scaleX(-1);
+}
+
+div.boxjornada > div.grupos{
+    background-color: #1A7FBD;
+    color: #FFF;
+    font-size: .8em;
+    border-radius: 5px;
+    margin: 21px 4px;
+    height: 80px;
+    width: 204px;
+}
+
+div.boxjornada > div.grupos > img{
+     background-color: #FFF;
+    border-radius: 5px;
+    width: 28%;
+    border: 11px solid white;
+    margin: 10px;
+}
+
+div > div.boxjornada{
+    display: inline-block;
+}
+
+div.boxjornada > div.grupos > p{
+    width: 10px;
+    font-size: .7em;
+}
+
+div.grupos > p, div.grupos > img{
+    display: inline-block;
 }
