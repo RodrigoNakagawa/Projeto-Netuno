@@ -251,11 +251,11 @@ article > div#box{
     margin: 32px 18px;
 }
 
-div#box > h3, div#box > p {
-    padding: 10px;
+div#box > p {
+    font-size: .8em;
 }
 
-div#jornada{
+div#box > h3, div#box > p, div#jornada{
     padding: 10px;
 }
 
@@ -357,13 +357,78 @@ div#processoseletivo > a > img#botaoprocesso{
 }
 
  div.objetivos > div#boxobjetivos{
-    border-radius: 15px;
-    box-shadow: 0px 12px 20px 0px #505050;
+    border-radius: 7px;
+    box-shadow: 0px 17px 20px 0px #50505045;
     text-align: center;
     margin: 32px 18px;
     background-color: #fff;
 }
 
-div#objetivos > h3, div#objetivos > p {
+div#boxobjetivos > h3, div#boxobjetivos > p {
     padding: 10px;
+}
+
+div#boxobjetivos > p {
+    font-size: .8em;
+}
+
+footer{
+    background-color: black;
+}
+
+#imgrodape{
+    text-align: center;
+    padding: 20px;
+}
+
+#botaorodape{
+    background-color: white;
+    border-radius: 3px;
+    width: 94px;
+    padding: 3px;
+    display: inline-block;
+    text-align: center;
+}
+
+#botaorodape > a{
+    text-decoration: none;
+    font-size: 0.6em;
+    color: black;
+}
+
+#menurodape{
+    display: inline-block;
+}
+
+#menurodape > #lista, #contato > p{
+    color: white;
+    text-decoration: none;
+    padding: 1px 4px;
+    font-size: .6em;
+    text-align: center;
+}
+
+#contato{
+    padding: 20px;
+}
+
+.listarodape{
+    text-align: center;
+}
+
+#redes{
+    display: inline-block;
+}
+
+#redes > a > img{
+    width: 55%;
+}
+
+div#iconesrodape {
+    text-align: center;
+    color: white;
+}
+
+#iconesrodape > div > p{
+   font-size: .5em;
 }

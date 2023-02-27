@@ -15,7 +15,7 @@
     <header>
         <picture><a href=""><img src="Imagens/assets/logo.png" alt=""></a></picture>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-        <menu id="lista">
+        <menu id="ilista">
             <ul>
                 <li><a href="">O Projeto</a></li>
                 <li><a href="">O Problema</a></li>
@@ -204,14 +204,36 @@
         </section>
     </main>
     <footer>
-
+        <div id="imgrodape"><img src="Imagens/assets/logo+slogan.png" alt=""></div>
+        <div class="listarodape">
+            <div id="botaorodape">
+            <a href="">Processo Seletivo</a>
+        </div>
+            <div id="menurodape">
+                <a id="lista" href="">O Projeto</a>
+                <a id="lista" href="">O Problema</a>
+                <a id="lista" href="">Sua Jornada</a>
+                <a id="lista" href="">Objetivos</a>
+            </div>
+            <div id="contato">
+                <p>Contato</p>
+                <p>11 912345678</p>
+                <p>contato@netuno.com.br</p>
+            </div>
+        </div>
+        <div id="iconesrodape">
+            <div id="redes"><a href=""><img src="Imagens/icones/fb.png" alt="fb"></a></div>
+            <div id="redes"><a href=""><img src="Imagens/icones/ig.png" alt="insta"></a></div>
+            <div id="redes"><a href=""><img src="Imagens/icones/in.png" alt="linkedin"></a></div>
+            <div><p>Netuno&copy; 2023 - Todos os direitos reservados</p></div>
+        </div>
     </footer>
     <script>
         function clickMenu() {
-            if (lista.style.display =='block'){
-            lista.style.display = 'none'
+            if (ilista.style.display =='block'){
+            ilista.style.display = 'none'
         } else {
-            lista.style.display = 'block'
+            ilista.style.display = 'block'
         }
     }
     </script>
