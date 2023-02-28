@@ -47,7 +47,6 @@ menu > ul{
 
 li > a{
     font-size: 17px;
-    text-shadow: .7px .7px 0.5px black;
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -58,7 +57,7 @@ li > a{
 }
 
 li > a:hover{
-    background-color: #29adff;
+    background-color: #A4DCFF;
 }
 
 main{
@@ -77,9 +76,10 @@ div#formulario {
     position: relative;
     background-color: white;
     border-radius: 15px;
-    height: 25em;
-    transform: translate(-2px, 321px);
+    height: 26em;
+    transform: translate(-2px, 411px);
     margin: 10px;
+    border-image: linear-gradient(to top right, white, transparent, white) 1 1 1 1/2px 2px 2px 2px/13px;
 }
 
 #formulario > h1{
@@ -99,6 +99,7 @@ div#formulario {
     border: 1px solid black;
     border-radius: 6px;
     margin: 4px 5px;
+    background-color: whitesmoke;
 }
 
 .login > label > img{
@@ -124,6 +125,7 @@ div#formulario {
     font-size: 1em;
     width: calc(100% - 34px);
     border: none;
+    background-color: transparent;
 }
 
 .group > .program, .group > .dev{
@@ -145,8 +147,8 @@ div#formulario {
     padding-left: 13px;
     padding-bottom: 5px;
 }
-.program > input{
-    margin: 0px 5px;
+.program > div > input{
+    margin-left: 20px;
 }
 
 .program > div{
@@ -242,7 +244,7 @@ div#parte2 {
 
 #problema > h1{
     font-size: 1.7em;
-    background: linear-gradient(to right, #1A7FBD, #29adff);
+    background: linear-gradient(to right, #1A7FBD, #A4DCFF);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -268,8 +270,19 @@ div > div#box{
     box-shadow: 0px 12px 20px 0px #bfbfbf;
     text-align: center;
     margin: 32px 18px;
+    height: 23vh;
 }
 
+#box > h1{
+    font-size: 7em;
+    position: relative;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #8080802b;
+    color: transparent;
+    right: 1%;
+    bottom: 3%;
+    height: 20px;
+}
 div#box > p {
     font-size: .8em;
 }
@@ -294,7 +307,7 @@ div#jornada > div.vectorinv, div.vector2{
 }
 
 div#jornada > div.jornada{
-    background: linear-gradient(to right, #1A7FBD, #29adff);
+    background: linear-gradient(to right, #1A7FBD,#A4DCFF);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

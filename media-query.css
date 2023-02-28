@@ -53,7 +53,6 @@ li{
 
 li > a {
     font-size: 17px;
-    text-shadow: 0.7px 0.7px 0.5px black;
     display: block;
     padding: 10px 35px;
     text-decoration: none;
@@ -73,7 +72,7 @@ a#processo {
 }
 
 li > a:hover{
-    background-color: #29adff;
+    background-color: #A4DCFF;
     border-radius: 9px;
 }
 
@@ -88,7 +87,7 @@ div#background1 {
     position: relative;
     background-position: center top;
     top: -8px;
-    height: 1440px;
+    height: 1557px;
     left: -339px;
 }
 
@@ -96,10 +95,12 @@ div#formulario {
     position: relative;
     background-color: white;
     border-radius: 15px;
-    height: 56em;
-    transform: translate(270%, 28%);
+    height: 59em;
+    transform: translate(270%, 31%);
     margin: 10px;
-    width: 27%;
+    width: 28.2%;
+    border: 1px solid white;
+    border-image: linear-gradient(to top right, #A4DCFF, transparent, #A4DCFF) 1 1 1 1/2px 2px 2px 2px/13px ;
 }
 
 #formulario > h1 {
@@ -120,6 +121,7 @@ div#formulario {
     border-radius: 8px;
     margin: 13px 31px;
     padding: 1px;
+    background-color: whitesmoke;
 }
 
 .login > label > img {
@@ -146,6 +148,7 @@ div#formulario {
     font-size: 1em;
     width: calc(100% - 72px);
     border: none;
+    background-color: transparent;
 }
 
 div#estado {
@@ -170,7 +173,7 @@ div#estado {
     padding-left: 13px;
     padding-bottom: 5px;
 }
-.program > input{
+.program > div > input{
     margin: 0px 5px;
 }
 
@@ -302,7 +305,7 @@ div#problema {
 
 #problema > h1 {
     font-size: 2.7em;
-    background: linear-gradient(to right, #1A7FBD, #63bff9);
+    background: linear-gradient(to right, #1A7FBD, #A4DCFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 10px;
@@ -340,6 +343,16 @@ div.boxclass > div#box {
     background-color: white;
 }
 
+#box > h1 {
+    font-size: 7em;
+    position: relative;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #8080802b;
+    color: transparent;
+    right: 1%;
+    bottom: -4%;
+}
+
 div#box > h3 {
     font-size: 2em;
     padding: 53px 0px 25px 0px;
@@ -364,15 +377,17 @@ div#jornada > div.vectorinv, div.vector2 {
     height: 3vh;
     background-repeat: no-repeat;
     background-size: contain;
+    vertical-align: middle;
 }
 
-div#jornada > div.jornada{
-    background: linear-gradient(to right, #1A7FBD, #29adff);
+div#jornada > div.jornada {
+    background: linear-gradient(to right, #1A7FBD,#A4DCFF);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2.9em;
-    padding: 23px;
+    padding: 24px;
+    vertical-align: baseline;
 }
 
 div#jornada > div.vectorinv{
@@ -430,6 +445,7 @@ div#processoseletivo {
     text-align: center;
     width: 30%;
     margin-top: 14vh;
+    box-shadow: 0px 18px 20px 1px #00000040;
 }
 
 div#processoseletivo > a {
@@ -576,7 +592,7 @@ div#iconesrodape {
     text-align: left;
     color: white;
     display: block;
-    margin-left: 15.5%;
+    margin-left: 19%;
     bottom: 7vh;
     position: relative;
 }
