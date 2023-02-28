@@ -179,10 +179,29 @@ div.dev > legend{
     border-bottom: .7px solid lightgray;
 }
 
+input.enviar {
+    background-color: #1A7FBD;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.3em;
+}
 div.enviar > p{
     color: #1A7FBD;
     font-size: .5em;
     padding: 2px 0px;
+    font-weight: 600;
+}
+
+p#politica {
+    color: #919191;
+    font-weight: 400;
+}
+
+p#politica > a{
+    text-decoration: none;
+    color: #1A7FBD;
 }
 
 div#background2{
@@ -244,7 +263,7 @@ div#parte2 {
     padding: 10px;
 }
 
-article > div#box{
+div > div#box{
     border-radius: 15px;
     box-shadow: 0px 12px 20px 0px #bfbfbf;
     text-align: center;
@@ -257,6 +276,10 @@ div#box > p {
 
 div#box > h3, div#box > p, div#jornada{
     padding: 10px;
+}
+
+div#jornada{
+    text-align: center;
 }
 
 div#jornada > div{
@@ -284,8 +307,6 @@ div#jornada > div.vectorinv{
 
 div.boxjornada > div.grupos{
     background-color: #1A7FBD;
-    color: #FFF;
-    font-size: .8em;
     border-radius: 5px;
     margin: 16px 5px;
     box-shadow: 0px 6px 14px 0px #00000052;
@@ -298,6 +319,7 @@ div.boxjornada > div.grupos > img{
     border: 11px solid white;
     margin: 10px;
     margin-top: 14px;
+    vertical-align: middle;
 }
 
 div > div.boxjornada{
@@ -305,18 +327,21 @@ div > div.boxjornada{
     width: 49%;
 }
 
-div.boxjornada > div.grupos > p{
-    width: 55%;
-    font-size: .9em;
-    transform: translate(0%, -112%);
-    height: 12px;
+div.boxjornada > div.grupos > p {
+    width: calc(100% - 42%);
+    font-size: .8em;
+    height: 10px;
+    color: #FFF;
+    vertical-align: middle;
+    padding-bottom: 70px;
 }
+
 div.grupos > p, div.grupos > img{
     display: inline-block;
 }
 
 img.groupimg {
-    padding: 1vh 0px;
+    padding: 1.3vh 0px;
 }
 
 div#processoseletivo{
